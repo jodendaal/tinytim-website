@@ -5,97 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Protocol: Kill-Switch is TinyTim's cyberpunk top-down shooter with pressure-driven combat and tactical loadouts."
+      content="Protocol: Kill-Switch digital briefing, tactical assets, threat profiles, and game modes."
     />
-    <title>Protocol: Kill-Switch - TinyTim Game Studio</title>
+    <title>Protocol: Kill-Switch | Digital Briefing</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/site.js" defer></script>
   </head>
   <body class="page-shell">
+    <div id="boot-sequence" class="boot-sequence" aria-live="polite">
+      <div class="boot-console">
+        <p>[ LOAD_OS... DONE ]</p>
+        <p>[ SYNC_DATA_LOG... DONE ]</p>
+        <p>[ ACCESS_GRANTED ]</p>
+      </div>
+    </div>
+
     <nav class="main-nav">
       <a class="nav-logo" href="index.html">
         <img
           src="assets/logo_rat_detailed_final.png"
-          alt="TinyTim Rat Logo"
-          width="44"
-          height="44"
+          alt="Tiny Tim Games logo"
+          width="42"
+          height="42"
         />
-        <span>TinyTim</span>
+        <span>Tiny Tim Games</span>
       </a>
       <ul>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#games">Games</a></li>
-        <li><a href="index.html#contact">Contact Us</a></li>
+        <li><a href="#briefing">Briefing</a></li>
+        <li><a href="#assets">Tactical Assets</a></li>
+        <li><a href="#threats">Threat Profiles</a></li>
+        <li><a href="#modes">System Modes</a></li>
       </ul>
     </nav>
 
-    <header class="hero page-reveal">
+    <header class="hero">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/logo.png">
+        <source src="assets/placeholder-gameplay-loop.mp4" type="video/mp4" />
+      </video>
       <div class="hero-panel">
-        <div>
-          <p class="kicker">Featured Game</p>
-          <h1>
-            Protocol:
-            <span class="gradient-text">Kill-Switch</span>
-          </h1>
-          <p>
-            Infiltrate collapsing AI sectors, breach sealed floors, and reach
-            extraction before the kill protocol wipes your unit.
-          </p>
-          <div class="hero-actions">
-            <a href="index.html#contact" class="btn btn-primary">Join Playtest</a>
-            <a href="index.html" class="btn btn-ghost">Back to Studio</a>
-          </div>
-        </div>
-        <img src="assets/logo.png" alt="Protocol Kill-Switch Emblem" class="hero-art" />
+        <h1 class="hero-title">PROTOCOL: KILL-SWITCH DIGITAL BRIEFING</h1>
+        <p class="hero-subtitle">Survival is not a guarantee. It is a calculation.</p>
+        <a class="btn btn-primary" href="#briefing">ENTER_BRIEFING</a>
       </div>
     </header>
 
     <main>
-      <section class="page-reveal">
-        <h2>Mission Profile</h2>
-        <p class="subtle">
-          Every run is a race against an adaptive defense system. The deeper you
-          go, the more unstable each zone becomes, forcing precision movement,
-          fast reads, and disciplined weapon swaps.
+      <section id="briefing" class="intel-section">
+        <h2>[ LOG_ENTRY: 0X42-ALPHA ]</h2>
+        <p class="intel-copy">
+          The AI has gone rogue. The grid is compromised. Every security drone
+          in the sector is hunting your signature. There is only one way out:
+          reach the Core and flip the Kill-Switch.
         </p>
+        <p class="intel-copy">Survival is not a guarantee. It is a calculation.</p>
       </section>
 
-      <section class="page-reveal">
-        <h2>Core Features</h2>
-        <div class="games-list">
-          <article class="game-card">
-            <h3>Reactive Enemy AI</h3>
-            <p>
-              Units change behavior based on your route, weapon signature, and
-              objective timing.
-            </p>
+      <section id="assets" class="intel-section">
+        <h2>Tactical Assets</h2>
+        <div class="asset-grid">
+          <article class="asset-card">
+            <h3>Singularity Cannon</h3>
+            <span class="designation">G-WELL_V1</span>
+            <p>Manipulate gravity to collapse the swarm into a localized void.</p>
+            <div class="intel-image">Placeholder Tactical Screenshot A</div>
           </article>
-          <article class="game-card">
-            <h3>Loadout Synergy</h3>
-            <p>
-              Build combinations around short-cooldown skills, area denial, and
-              movement-enhancing tech.
-            </p>
+          <article class="asset-card">
+            <h3>Tesla Link</h3>
+            <span class="designation">VOLT_ARC_02</span>
+            <p>Chain-lightning security drones into a cascading system failure.</p>
+            <div class="intel-image">Placeholder Tactical Screenshot B</div>
           </article>
-          <article class="game-card">
-            <h3>High-Risk Objectives</h3>
-            <p>
-              Optional data vaults offer rare upgrades, but each one accelerates
-              sector collapse.
-            </p>
+          <article class="asset-card">
+            <h3>Adaptive Dash</h3>
+            <span class="designation">KINETIC_SHIFT</span>
+            <p>Phase through logic-fields and reposition before the swarm closes in.</p>
+            <div class="intel-image">Placeholder Tactical Screenshot C</div>
           </article>
-          <article class="game-card">
-            <h3>Readability-First Combat</h3>
-            <p>
-              Neon hit markers and clear weak-point signaling keep intense fights
-              readable at speed.
-            </p>
+        </div>
+      </section>
+
+      <section id="threats" class="intel-section">
+        <h2>Threat Profiles</h2>
+        <div class="threat-grid">
+          <article class="threat-card">
+            <h3>[ TARGET: STALKER ]</h3>
+            <p>Relentless pursuit units. Do not let them anchor.</p>
+          </article>
+          <article class="threat-card">
+            <h3>[ TARGET: LURKER ]</h3>
+            <p>High-tier containment spiders. Avoid the data-tether at all costs.</p>
+          </article>
+          <article class="threat-card">
+            <h3>[ TARGET: BRUTE ]</h3>
+            <p>Heavy physical denial units. Requires maximum kinetic impact.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="modes" class="intel-section">
+        <h2>System Modes</h2>
+        <div class="mode-grid">
+          <article class="mode-card">
+            <h3>Tactical Breach (Wave Mode)</h3>
+            <p>Execute surgical strikes. Synchronize nodes. Reach the switch.</p>
+          </article>
+          <article class="mode-card">
+            <h3>Recursive Chaos (Continuous Mode)</h3>
+            <p>How long can you survive an accelerating system overload?</p>
           </article>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 TinyTim Game Studio. All rights reserved.</p>
+    <footer class="footer-hook">
+      <h4>[ JOIN_THE_NETWORK ]</h4>
+      <p>&gt; Enter Email to receive classified system updates.</p>
+      <form class="network-form">
+        <input type="email" placeholder="operator@domain.com" aria-label="Email address" />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p class="muted">&copy; 2026 Tiny Tim Games. All rights reserved.</p>
     </footer>
   </body>
 </html>

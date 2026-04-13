@@ -5,125 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="TinyTim Game Studio builds neon-soaked top-down shooters and high-energy cyberpunk experiences."
+      content="Tiny Tim Games builds deep-system rogue-lites and arcade-shredding action."
     />
-    <title>TinyTim Game Studio | Cyberpunk Action</title>
+    <title>Tiny Tim Games | System-Critical Action</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/site.js" defer></script>
   </head>
   <body class="page-shell">
+    <div id="boot-sequence" class="boot-sequence" aria-live="polite">
+      <div class="boot-console">
+        <p>[ LOAD_OS... DONE ]</p>
+        <p>[ SYNC_DATA_LOG... DONE ]</p>
+        <p>[ ACCESS_GRANTED ]</p>
+      </div>
+    </div>
+
     <nav class="main-nav">
       <a class="nav-logo" href="index.html">
         <img
           src="assets/logo_rat_detailed_final.png"
-          alt="TinyTim Rat Logo"
-          width="44"
-          height="44"
+          alt="Tiny Tim Games logo"
+          width="42"
+          height="42"
         />
-        <span>TinyTim</span>
+        <span>Tiny Tim Games</span>
       </a>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#games">Games</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#dev-log">Dev Log</a></li>
       </ul>
     </nav>
 
-    <header class="hero page-reveal">
+    <header class="hero" id="top">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/logo.png">
+        <source src="assets/placeholder-gameplay-loop.mp4" type="video/mp4" />
+      </video>
       <div class="hero-panel">
-        <div>
-          <p class="kicker">Independent Game Studio</p>
-          <h1>
-            We Build
-            <span class="gradient-text">Cyberpunk Firefights</span>
-          </h1>
-          <p>
-            TinyTim crafts high-contrast, pulse-pounding shooters where every
-            room feels live-wired and every encounter pushes skill.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#games">Explore Games</a>
-            <a class="btn btn-ghost" href="protocol-kill-switch.html">View Featured Title</a>
-          </div>
-        </div>
-        <img src="assets/logo.png" alt="TinyTim Studio Logo" class="hero-art" />
+        <h1 class="hero-title">BUILDING THE NEXT GENERATION OF SYSTEM-CRITICAL ACTION.</h1>
+        <p class="hero-subtitle">Deep-system rogue-lites and arcade-shredding combat.</p>
+        <p class="featured-tag">Featured Game: [PROTOCOL: KILL-SWITCH]</p>
+        <p class="featured-copy">
+          A lone operative. A world of rogue code. A swarm that never ends. Do
+          you have the logic to survive?
+        </p>
+        <a class="btn btn-primary" href="protocol-kill-switch.html">INITIALIZE_INFILTRATION</a>
       </div>
     </header>
 
     <main>
-      <section id="about" class="page-reveal">
-        <h2>About TinyTim</h2>
-        <p class="subtle">
-          We specialize in top-down action games with tight controls, layered
-          encounters, and a distinct neon-industrial atmosphere. We obsess over
-          gameplay readability, speed, and impact.
+      <section id="featured" class="intel-section">
+        <h2>Featured Combat Feed</h2>
+        <p class="intel-copy">
+          Placeholder visual lane for Singularity detonations, Tesla arc chains,
+          and kinetic breach moments. Swap these placeholders with gameplay
+          captures when assets are ready.
         </p>
-        <div class="stats">
-          <div class="stat">
-            <strong>3</strong>
-            Prototypes in active development
-          </div>
-          <div class="stat">
-            <strong>60fps</strong>
-            Combat-first design target
-          </div>
-          <div class="stat">
-            <strong>24/7</strong>
-            Community feedback loop
-          </div>
-        </div>
-      </section>
-
-      <section id="games" class="page-reveal">
-        <h2>Our Games</h2>
-        <p class="subtle">
-          Built for players who love precision aim, movement mastery, and risky
-          decision-making.
-        </p>
-        <div class="games-list">
-          <a href="protocol-kill-switch.html" class="game-card">
-            <h3>Protocol: Kill-Switch</h3>
-            <p>
-              A high-stakes top-down shooter where unstable AI sectors collapse
-              around you as your extraction timer runs down.
-            </p>
-          </a>
-          <article class="game-card">
-            <h3>More Titles Incoming</h3>
-            <p>
-              Two unannounced projects are currently in vertical slice. Follow
-              us to get first access announcements.
-            </p>
+        <div class="asset-grid">
+          <article class="asset-card">
+            <h3>Singularity Event</h3>
+            <p>Area-collapse test with chain reaction enemies.</p>
+            <div class="intel-image">Placeholder Gameplay Clip 01</div>
+          </article>
+          <article class="asset-card">
+            <h3>Tesla Arc Cascade</h3>
+            <p>Adaptive chain-lightning over clustered drone packs.</p>
+            <div class="intel-image">Placeholder Gameplay Clip 02</div>
+          </article>
+          <article class="asset-card">
+            <h3>Kinetic Dash Breach</h3>
+            <p>Reposition through hostile logic-fields and flank pressure.</p>
+            <div class="intel-image">Placeholder Gameplay Clip 03</div>
           </article>
         </div>
       </section>
 
-      <section id="contact" class="page-reveal">
-        <h2>Contact</h2>
-        <p class="subtle">
-          Want to collaborate, stream a build, or talk press? Send us a message.
+      <section id="studio" class="intel-section">
+        <h2>Studio Directive</h2>
+        <p class="intel-copy">
+          Tiny Tim Games builds high-intensity games where systems collide:
+          movement tech, threat logic, and split-second decision loops. Every
+          encounter is designed to feel like a live tactical equation.
         </p>
-        <form class="contact-form">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="field-full">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <div class="field-full">
-            <button type="submit" class="btn btn-primary">Transmit</button>
-          </div>
-        </form>
+      </section>
+
+      <section id="dev-log" class="intel-section">
+        <h2>Dev Log Channel</h2>
+        <div class="devlog-card">
+          <h3>Incoming Build Notes</h3>
+          <p>
+            This section is ready for your weekly updates, patch previews,
+            balance insights, and behind-the-scenes systems breakdowns.
+          </p>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2026 TinyTim Game Studio. Built in the neon edge.</p>
+    <footer class="footer-hook">
+      <h4>[ JOIN_THE_NETWORK ]</h4>
+      <p>&gt; Enter Email to receive classified system updates.</p>
+      <form class="network-form">
+        <input type="email" placeholder="operator@domain.com" aria-label="Email address" />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p class="muted">&copy; 2026 Tiny Tim Games. All rights reserved.</p>
     </footer>
   </body>
 </html>
