@@ -3,38 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Protocol: Kill-Switch is TinyTim's cyberpunk top-down shooter with pressure-driven combat and tactical loadouts."
+    />
     <title>Protocol: Kill-Switch - TinyTim Game Studio</title>
     <link rel="stylesheet" href="assets/style.css" />
   </head>
-  <body>
+  <body class="page-shell">
     <nav class="main-nav">
-      <div class="nav-logo">
+      <a class="nav-logo" href="index.html">
         <img
           src="assets/logo_rat_detailed_final.png"
           alt="TinyTim Rat Logo"
-          height="48"
+          width="44"
+          height="44"
         />
-      </div>
+        <span>TinyTim</span>
+      </a>
       <ul>
         <li><a href="index.html#about">About</a></li>
         <li><a href="index.html#games">Games</a></li>
         <li><a href="index.html#contact">Contact Us</a></li>
       </ul>
     </nav>
-    <header class="hero">
-      <div class="hero-content hero-images">
-        <img src="assets/logo.png" alt="TinyTim Logo" class="hero-img" />
+
+    <header class="hero page-reveal">
+      <div class="hero-panel">
+        <div>
+          <p class="kicker">Featured Game</p>
+          <h1>
+            Protocol:
+            <span class="gradient-text">Kill-Switch</span>
+          </h1>
+          <p>
+            Infiltrate collapsing AI sectors, breach sealed floors, and reach
+            extraction before the kill protocol wipes your unit.
+          </p>
+          <div class="hero-actions">
+            <a href="index.html#contact" class="btn btn-primary">Join Playtest</a>
+            <a href="index.html" class="btn btn-ghost">Back to Studio</a>
+          </div>
+        </div>
+        <img src="assets/logo.png" alt="Protocol Kill-Switch Emblem" class="hero-art" />
       </div>
     </header>
+
     <main>
-      <section>
-        <h2>Protocol: Kill-Switch</h2>
-        <p>
-          A high-stakes action game where you must outsmart, outfight, and
-          outlast your enemies to survive the ultimate kill-switch protocol.
+      <section class="page-reveal">
+        <h2>Mission Profile</h2>
+        <p class="subtle">
+          Every run is a race against an adaptive defense system. The deeper you
+          go, the more unstable each zone becomes, forcing precision movement,
+          fast reads, and disciplined weapon swaps.
         </p>
       </section>
+
+      <section class="page-reveal">
+        <h2>Core Features</h2>
+        <div class="games-list">
+          <article class="game-card">
+            <h3>Reactive Enemy AI</h3>
+            <p>
+              Units change behavior based on your route, weapon signature, and
+              objective timing.
+            </p>
+          </article>
+          <article class="game-card">
+            <h3>Loadout Synergy</h3>
+            <p>
+              Build combinations around short-cooldown skills, area denial, and
+              movement-enhancing tech.
+            </p>
+          </article>
+          <article class="game-card">
+            <h3>High-Risk Objectives</h3>
+            <p>
+              Optional data vaults offer rare upgrades, but each one accelerates
+              sector collapse.
+            </p>
+          </article>
+          <article class="game-card">
+            <h3>Readability-First Combat</h3>
+            <p>
+              Neon hit markers and clear weak-point signaling keep intense fights
+              readable at speed.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
+
     <footer>
       <p>&copy; 2026 TinyTim Game Studio. All rights reserved.</p>
     </footer>

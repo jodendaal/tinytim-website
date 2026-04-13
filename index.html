@@ -3,66 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TinyTim Game Studio</title>
+    <meta
+      name="description"
+      content="TinyTim Game Studio builds neon-soaked top-down shooters and high-energy cyberpunk experiences."
+    />
+    <title>TinyTim Game Studio | Cyberpunk Action</title>
     <link rel="stylesheet" href="assets/style.css" />
   </head>
-  <body>
+  <body class="page-shell">
     <nav class="main-nav">
-      <div class="">
+      <a class="nav-logo" href="index.html">
         <img
           src="assets/logo_rat_detailed_final.png"
           alt="TinyTim Rat Logo"
-          height="48"
+          width="44"
+          height="44"
         />
-      </div>
+        <span>TinyTim</span>
+      </a>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#games">Games</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <header class="hero">
-      <div class="hero-content hero-images">
-        <img src="assets/logo.png" alt="TinyTim Logo" class="hero-img" />
+
+    <header class="hero page-reveal">
+      <div class="hero-panel">
+        <div>
+          <p class="kicker">Independent Game Studio</p>
+          <h1>
+            We Build
+            <span class="gradient-text">Cyberpunk Firefights</span>
+          </h1>
+          <p>
+            TinyTim crafts high-contrast, pulse-pounding shooters where every
+            room feels live-wired and every encounter pushes skill.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#games">Explore Games</a>
+            <a class="btn btn-ghost" href="protocol-kill-switch.html">View Featured Title</a>
+          </div>
+        </div>
+        <img src="assets/logo.png" alt="TinyTim Studio Logo" class="hero-art" />
       </div>
     </header>
 
     <main>
-      <section id="about">
-        <h2>About Us</h2>
-        <p>
-          We are TinyTim Game Studio, passionate about creating unique and
-          memorable gaming experiences. Our team is dedicated to innovation,
-          creativity, and fun!
+      <section id="about" class="page-reveal">
+        <h2>About TinyTim</h2>
+        <p class="subtle">
+          We specialize in top-down action games with tight controls, layered
+          encounters, and a distinct neon-industrial atmosphere. We obsess over
+          gameplay readability, speed, and impact.
         </p>
+        <div class="stats">
+          <div class="stat">
+            <strong>3</strong>
+            Prototypes in active development
+          </div>
+          <div class="stat">
+            <strong>60fps</strong>
+            Combat-first design target
+          </div>
+          <div class="stat">
+            <strong>24/7</strong>
+            Community feedback loop
+          </div>
+        </div>
       </section>
-      <section id="games">
+
+      <section id="games" class="page-reveal">
         <h2>Our Games</h2>
+        <p class="subtle">
+          Built for players who love precision aim, movement mastery, and risky
+          decision-making.
+        </p>
         <div class="games-list">
           <a href="protocol-kill-switch.html" class="game-card">
             <h3>Protocol: Kill-Switch</h3>
             <p>
-              A high-stakes action game where you must outsmart, outfight, and
-              outlast your enemies to survive the ultimate kill-switch protocol.
+              A high-stakes top-down shooter where unstable AI sectors collapse
+              around you as your extraction timer runs down.
             </p>
           </a>
+          <article class="game-card">
+            <h3>More Titles Incoming</h3>
+            <p>
+              Two unannounced projects are currently in vertical slice. Follow
+              us to get first access announcements.
+            </p>
+          </article>
         </div>
       </section>
-      <section id="contact">
-        <h2>Contact Us</h2>
+
+      <section id="contact" class="page-reveal">
+        <h2>Contact</h2>
+        <p class="subtle">
+          Want to collaborate, stream a build, or talk press? Send us a message.
+        </p>
         <form class="contact-form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send</button>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="field-full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="field-full">
+            <button type="submit" class="btn btn-primary">Transmit</button>
+          </div>
         </form>
       </section>
     </main>
+
     <footer>
-      <p>&copy; 2026 TinyTim Game Studio. All rights reserved.</p>
+      <p>&copy; 2026 TinyTim Game Studio. Built in the neon edge.</p>
     </footer>
   </body>
 </html>
