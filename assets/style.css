@@ -326,6 +326,11 @@ h2 {
   background: rgba(11, 14, 20, 0.72);
 }
 
+.asset-card {
+  display: flex;
+  flex-direction: column;
+}
+
 .asset-card h3,
 .threat-card h3,
 .mode-card h3,
@@ -343,6 +348,10 @@ h2 {
   margin: 0.45rem 0 0;
   color: rgba(224, 247, 250, 0.82);
   line-height: 1.4;
+}
+
+.asset-card p {
+  min-height: 4.3em;
 }
 
 .designation {
@@ -375,6 +384,10 @@ h2 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   animation: pulseBorder 2.5s ease-in-out infinite;
+}
+
+.asset-card .intel-image {
+  margin-top: auto;
 }
 
 @keyframes pulseBorder {
