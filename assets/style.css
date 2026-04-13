@@ -427,6 +427,24 @@ h2 {
   gap: 0.6rem;
 }
 
+.network-status {
+  min-height: 1.1rem;
+  margin: 0.65rem 0 0;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.76rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: rgba(224, 247, 250, 0.72);
+}
+
+.network-status.success {
+  color: var(--glow-primary);
+}
+
+.network-status.error {
+  color: #ff8fa3;
+}
+
 input,
 textarea {
   width: 100%;
