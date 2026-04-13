@@ -187,6 +187,11 @@ label:hover {
   padding: 3rem 1.2rem;
 }
 
+.hero-compact {
+  min-height: 34vh;
+  padding: 1.25rem 1.2rem;
+}
+
 .hero-video {
   position: absolute;
   inset: 0;
