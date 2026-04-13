@@ -33,18 +33,28 @@
       <ul>
         <li><a href="#briefing">Briefing</a></li>
         <li><a href="#assets">Tactical Assets</a></li>
+        <li><a href="#augments">Augments</a></li>
         <li><a href="#threats">Threat Profiles</a></li>
         <li><a href="#modes">System Modes</a></li>
       </ul>
     </nav>
 
     <header class="hero">
-      <video class="hero-video" autoplay muted loop playsinline poster="assets/logo.png">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="assets/logo.png"
+      >
         <source src="assets/placeholder-gameplay-loop.mp4" type="video/mp4" />
       </video>
       <div class="hero-panel">
         <h1 class="hero-title">PROTOCOL: KILL-SWITCH DIGITAL BRIEFING</h1>
-        <p class="hero-subtitle">Survival is not a guarantee. It is a calculation.</p>
+        <p class="hero-subtitle">
+          Survival is not a guarantee. It is a calculation.
+        </p>
         <a class="btn btn-primary" href="#briefing">ENTER_BRIEFING</a>
       </div>
     </header>
@@ -57,7 +67,9 @@
           in the sector is hunting your signature. There is only one way out:
           reach the Core and flip the Kill-Switch.
         </p>
-        <p class="intel-copy">Survival is not a guarantee. It is a calculation.</p>
+        <p class="intel-copy">
+          Survival is not a guarantee. It is a calculation.
+        </p>
       </section>
 
       <section id="assets" class="intel-section">
@@ -66,20 +78,56 @@
           <article class="asset-card">
             <h3>Singularity Cannon</h3>
             <span class="designation">G-WELL_V1</span>
-            <p>Manipulate gravity to collapse the swarm into a localized void.</p>
+            <p>
+              Manipulate gravity to collapse the swarm into a localized void.
+            </p>
             <div class="intel-image">Placeholder Tactical Screenshot A</div>
           </article>
           <article class="asset-card">
             <h3>Tesla Link</h3>
             <span class="designation">VOLT_ARC_02</span>
-            <p>Chain-lightning security drones into a cascading system failure.</p>
-            <div class="intel-image">Placeholder Tactical Screenshot B</div>
+            <p>
+              Chain-lightning security drones into a cascading system failure.
+            </p>
+            <div class="intel-image"><img src="assets/tesla-link.gif" /></div>
           </article>
           <article class="asset-card">
             <h3>Adaptive Dash</h3>
             <span class="designation">KINETIC_SHIFT</span>
-            <p>Phase through logic-fields and reposition before the swarm closes in.</p>
-            <div class="intel-image">Placeholder Tactical Screenshot C</div>
+            <p>
+              Phase through logic-fields and reposition before the swarm closes
+              in.
+            </p>
+            <div class="intel-image"><img src="assets/dash.gif" /></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="augments" class="intel-section">
+        <h2>Augment Modules</h2>
+        <p class="intel-copy">
+          Build-defining powerups and perks that reshape combat tempo, survivability,
+          and burst windows. Placeholder entries below can be replaced as your final
+          perk list locks.
+        </p>
+        <div class="asset-grid">
+          <article class="asset-card">
+            <h3>Powerup: Overclock Cell</h3>
+            <span class="designation">BOOST_PWR_01</span>
+            <p>Temporarily amplifies fire rate and projectile velocity during pressure spikes.</p>
+            <div class="intel-image">Placeholder Powerup Preview A</div>
+          </article>
+          <article class="asset-card">
+            <h3>Powerup: Shield Relay</h3>
+            <span class="designation">AEGIS_NODE_03</span>
+            <p>Deploy a short-duration energy shield to absorb burst damage and buy reposition time.</p>
+            <div class="intel-image">Placeholder Powerup Preview B</div>
+          </article>
+          <article class="asset-card">
+            <h3>Perk: Feedback Loop</h3>
+            <span class="designation">PERK_LOOP_07</span>
+            <p>Final hit on marked targets refunds cooldown fragments and sustains ability chains.</p>
+            <div class="intel-image">Placeholder Perk Preview C</div>
           </article>
         </div>
       </section>
@@ -93,7 +141,9 @@
           </article>
           <article class="threat-card">
             <h3>[ TARGET: LURKER ]</h3>
-            <p>High-tier containment spiders. Avoid the data-tether at all costs.</p>
+            <p>
+              High-tier containment spiders. Avoid the data-tether at all costs.
+            </p>
           </article>
           <article class="threat-card">
             <h3>[ TARGET: BRUTE ]</h3>
@@ -107,7 +157,9 @@
         <div class="mode-grid">
           <article class="mode-card">
             <h3>Tactical Breach (Wave Mode)</h3>
-            <p>Execute surgical strikes. Synchronize nodes. Reach the switch.</p>
+            <p>
+              Execute surgical strikes. Synchronize nodes. Reach the switch.
+            </p>
           </article>
           <article class="mode-card">
             <h3>Recursive Chaos (Continuous Mode)</h3>
@@ -121,7 +173,11 @@
       <h4>[ JOIN_THE_NETWORK ]</h4>
       <p>&gt; Enter Email to receive classified system updates.</p>
       <form class="network-form">
-        <input type="email" placeholder="operator@domain.com" aria-label="Email address" />
+        <input
+          type="email"
+          placeholder="operator@domain.com"
+          aria-label="Email address"
+        />
         <button type="submit" class="btn btn-primary">Subscribe</button>
       </form>
       <p class="muted">&copy; 2026 Tiny Tim Games. All rights reserved.</p>
