@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Business, promotion, and partnership enquiries for Tiny Tim Games."
+    />
+    <title>Get In Contact | Tiny Tim Games</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body class="page-shell">
+    <div id="boot-sequence" class="boot-sequence" aria-live="polite">
+      <div class="boot-console">
+        <p>[ LOAD_OS... DONE ]</p>
+        <p>[ SYNC_DATA_LOG... DONE ]</p>
+        <p>[ ACCESS_GRANTED ]</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a class="nav-logo" href="index.html">
+        <img
+          src="assets/logo_rat_detailed_final.png"
+          alt="Tiny Tim Games logo"
+          width="42"
+          height="42"
+        />
+        <span>Tiny Tim Games</span>
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="protocol-kill-switch.html">Game Briefing</a></li>
+        <li><a href="#business-form">Business Form</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <img
+        class="hero-video fit-media"
+        src="assets/tesla-link.gif"
+        alt=""
+        aria-hidden="true"
+      />
+      <div class="hero-panel">
+        <h1 class="hero-title">GET IN CONTACT</h1>
+        <p class="hero-subtitle">
+          For partnerships, promotions, publishing opportunities, and business
+          collaborations.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="intel-section">
+        <h2>When To Use This Form</h2>
+        <div class="contact-grid">
+          <article class="contact-card">
+            <h3>Business Partnerships</h3>
+            <p>
+              Use this form for publisher discussions, co-development, licensing,
+              and strategic collaboration requests.
+            </p>
+          </article>
+          <article class="contact-card">
+            <h3>Promotions & Campaigns</h3>
+            <p>
+              Reach out for creator campaigns, events, showcase opportunities,
+              cross-promotions, and launch activations.
+            </p>
+          </article>
+          <article class="contact-card">
+            <h3>Press & Media</h3>
+            <p>
+              Use this route for interviews, press kits, coverage opportunities,
+              and feature requests.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="business-form" class="intel-section">
+        <h2>Business Enquiry Form</h2>
+        <p class="intel-copy">
+          Share a short brief and we will route your request to the right team.
+          Typical response window: 2-5 business days.
+        </p>
+        <form class="business-form" data-contact-email="tinytimgames@gmail.com">
+          <div>
+            <label for="full_name">Full Name</label>
+            <input id="full_name" name="full_name" type="text" required />
+          </div>
+          <div>
+            <label for="work_email">Work Email</label>
+            <input id="work_email" name="work_email" type="email" required />
+          </div>
+          <div>
+            <label for="company">Company / Brand</label>
+            <input id="company" name="company" type="text" required />
+          </div>
+          <div>
+            <label for="enquiry_type">Enquiry Type</label>
+            <select id="enquiry_type" name="enquiry_type" required>
+              <option value="">Select one</option>
+              <option>Business Partnership</option>
+              <option>Promotion / Campaign</option>
+              <option>Press / Media</option>
+              <option>Investment / Publishing</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field-full">
+            <label for="project_overview">Project Overview</label>
+            <textarea
+              id="project_overview"
+              name="project_overview"
+              placeholder="What are you proposing, who is involved, and what outcome are you targeting?"
+              required
+            ></textarea>
+          </div>
+          <div class="field-full">
+            <label for="timeline">Timeline / Key Dates</label>
+            <input
+              id="timeline"
+              name="timeline"
+              type="text"
+              placeholder="Example: Campaign starts June 2026"
+            />
+          </div>
+          <div class="field-full">
+            <button type="submit" class="btn btn-primary">SEND_BUSINESS_BRIEF</button>
+          </div>
+        </form>
+        <p class="business-status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="footer-hook">
+      <h4>[ JOIN_THE_NETWORK ]</h4>
+      <p>&gt; Enter Email to receive classified system updates.</p>
+      <form
+        class="network-form"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSdqBdM-y5J0DjMYdS4K1pWBtZqR1NRyxkRWFBqNaTmnsHs59w/formResponse"
+        method="POST"
+      >
+        <input
+          type="email"
+          name="entry.1693480178"
+          placeholder="operator@domain.com"
+          aria-label="Email address"
+          autocomplete="email"
+          required
+        />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p class="network-status" aria-live="polite"></p>
+      <p class="muted">&copy; 2026 Tiny Tim Games. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
