@@ -21,6 +21,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  border-radius: 12px;
 }
 
 .fit-media,
@@ -29,6 +30,7 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: inherit;
 }
 
 html {
@@ -357,6 +359,7 @@ h2 {
   width: 100%;
   aspect-ratio: 16 / 10;
   border-radius: 10px;
+  overflow: hidden;
   border: 1px solid var(--glow-primary);
   box-shadow: 0 0 10px #00f0ff;
   background:
