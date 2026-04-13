@@ -39,7 +39,7 @@ a {
 
 .page-shell {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .main-nav {
