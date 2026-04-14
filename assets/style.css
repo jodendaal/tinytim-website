@@ -425,6 +425,44 @@ h2 {
   color: rgba(224, 247, 250, 0.8);
 }
 
+.share-label {
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(224, 247, 250, 0.9);
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #050a10;
+  background: linear-gradient(45deg, var(--glow-primary), var(--glow-secondary));
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(0, 242, 255, 0.26);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(160, 124, 254, 0.4);
+}
+
 .network-form {
   max-width: 480px;
   margin: 0 auto;
