@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EF60D6FQ3N"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-EF60D6FQ3N");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -95,8 +109,8 @@
           <article class="contact-card">
             <h3>Business Partnerships</h3>
             <p>
-              Use this form for publisher discussions, co-development, licensing,
-              and strategic collaboration requests.
+              Use this form for publisher discussions, co-development,
+              licensing, and strategic collaboration requests.
             </p>
           </article>
           <article class="contact-card">
@@ -155,7 +169,9 @@
             ></textarea>
           </div>
           <div class="field-full">
-            <button type="submit" class="btn btn-primary">SEND_BUSINESS_BRIEF</button>
+            <button type="submit" class="btn btn-primary">
+              SEND_BUSINESS_BRIEF
+            </button>
           </div>
         </form>
         <p class="business-status" aria-live="polite"></p>
